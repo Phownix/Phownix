@@ -45,6 +45,9 @@
 				</div>
 			</div>
 		{/each}
+		<span id="Web"></span>
+		<span id="App"></span>
+		<span id="ServerSide"></span>
 	</div>
 </section>
 
