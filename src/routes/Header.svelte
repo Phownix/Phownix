@@ -1,39 +1,26 @@
 <script>
-	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
+	import instagram from '$lib/images/instagram.svg';
 </script>
 
 <header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
+	<div class="web_title">
+		<a class="link_text no_space" href="/">
+			<span>Phownix</span>
+			<span class="colorized">web</span>
 		</a>
 	</div>
 
 	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
-		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Sverdle</a>
-			</li>
-		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
+		
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
+		<a target="_blank" href="https://github.com/Phownix">
 			<img src={github} alt="GitHub" />
+		</a>
+		<a target="_blank" href="https://instagram.com/webPhownix">
+			<img src={instagram} alt="@Phownix" />
 		</a>
 	</div>
 </header>
@@ -42,19 +29,44 @@
 	header {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 1.5rem;
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+
+	.web_title{
+		font-size: 2em;
+		font-weight: 600;
+	}
+
+	.web_title a:hover{
+		text-decoration: none;
+	}
+
+	.web_title .link_text{
+		color: var(--color-text) !important;
+	}
+
+	.web_title .colorized{
+		display:  none;
+
+		color: var(--color-theme-1);
+		font-style: italic;
+		/* font-variant:small-caps; */
+	}
+
+	.web_title .colorized::before{
+		content: "_";
+		font-weight: 900;
 	}
 
 	.corner {
-		width: 3em;
-		height: 3em;
-	}
-
-	.corner a {
 		display: flex;
 		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
+		justify-content: end;
+		gap: .5rem;
+		
 	}
 
 	.corner img {
@@ -67,63 +79,5 @@
 		display: flex;
 		justify-content: center;
 		--background: rgba(255, 255, 255, 0.7);
-	}
-
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
-	}
-
-	ul {
-		position: relative;
-		padding: 0;
-		margin: 0;
-		height: 3em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		list-style: none;
-		background: var(--background);
-		background-size: contain;
-	}
-
-	li {
-		position: relative;
-		height: 100%;
-	}
-
-	li[aria-current='page']::before {
-		--size: 6px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1);
-	}
-
-	nav a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 0.5rem;
-		color: var(--color-text);
-		font-weight: 700;
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		text-decoration: none;
-		transition: color 0.2s linear;
-	}
-
-	a:hover {
-		color: var(--color-theme-1);
 	}
 </style>
