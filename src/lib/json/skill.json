@@ -1,0 +1,15 @@
+[
+	{"name": "Express.js"},
+    {"name": "HTML5"},
+    {"name": "CSS3"},
+    {"name": "JavaScript"},
+    {"name": "Java 8"},
+    {"name": "Python"},
+    {"name": "Nunjucks"},
+    {"name": "Svelte"},
+    {"name": "React"},
+    {"name": "Django"},
+    {"name": "Angular"},
+    {"name": "MariaDB"},
+    {"name": "MongoDB"}
+]
