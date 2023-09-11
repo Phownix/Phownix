@@ -2,140 +2,137 @@
 	import github from '$lib/images/github.svg';
 	import instagram from '$lib/images/instagram.svg';
 	import linkedin from '$lib/images/linkedin.svg';
+	import threads from '$lib/images/threads.svg';
 </script>
 
-<header>
-	<div class="web_title">
-		<span class="subname">Paulo Gutierrez</span>
-		<a class="link_text" href="/">
-			<span class="colorize">w</span>
-			<span>Phownix</span>
-		</a>
+<nav>
+	<div class="principal">
+		<div class="nav_title">
+			<h1 class="__name">
+				<a href="/">
+					<span class="colorize">w</span>
+					<span class="text">Phoenix</span>
+				</a>
+			</h1>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="/">Portafolio</a></li>
+				<li><a href="/">Blog</a></li>
+			</ul>
+		</div>
 	</div>
-
-	<div class="corner">
-		<a target="_blank" href="https://www.linkedin.com/in/phownix/">
-			<img src={linkedin} alt="Linkedin" />
-			Linkedin
-		</a>
-
-		<a target="_blank" href="https://github.com/Phownix">
-			<img src={github} alt="GitHub" />
-			GitHub
-		</a>
-		
-		<a target="_blank" href="https://instagram.com/wphownix">
-			<img src={instagram} alt="@Phownix" />
-			Instagram
-		</a>
+	<div class="sites">
+		<a class="site_link instagram" href="https://www.instagram.com/wphownix"><img src="{instagram}" alt="Instagram Icon"></a>
+		<a class="site_link threads" href="https://www.threads.net/@wphownix"><img src="{threads}" alt="Threads Icon"></a>
+		<a class="site_link github" href="https://github.com/Phownix/"><img src="{github}" alt="Github Icon"></a>
+		<a class="site_link linkedin" href="https://www.linkedin.com/in/phownix"><img src="{linkedin}" alt="Linkedin Icon"></a>
 	</div>
-
-	<div class="down_btn">
-		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-			<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
-		</svg>
-	</div>
-</header>
+</nav>
 
 <style>
-	.down_btn{
-		display: inline-block;
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 1rem;
-		margin: auto auto;
-		width: min-content;
-		animation: keyDown .5s linear infinite alternate;
-		cursor: pointer;
-	}
-
-	.down_btn svg{
-		height: 3rem;
-		width: 3rem;
-	}
-
-	header {
+	nav{
 		position: relative;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		padding: 5vh 10vh;
-		height: 100vh;
-		margin: 0 auto;
-		
-		scroll-snap-align: start;
-		scroll-snap-stop: always;
-		
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	header .web_title .subname{
-		display: none;
-		font-size: 5vh;
-		opacity: .1;
-	}
-
-	header .web_title a{
-		display: flex;
-		font-family: var(--font-alternative);
-		font-size: 20vh;
-		text-decoration: none;
-		color: #ffffff;
-	}
-
-	header .web_title a span.colorize{
-		color: transparent;
-		-webkit-text-stroke: .5vh crimson;
-	}
-
-	header .corner{
-		display: flex;
 		align-items: center;
-		/* justify-content: right; */
-		gap: 2vh;
+		justify-content: space-between;
+		padding: 1rem 2rem;
+		/* background-color: var(--color-bg-2); */
+		color: var(--dark-text);
+		max-width: 1400px;
+		margin: auto;
 	}
 
-	header .corner a{
-		display: inline-flex;
-		align-items: center;
-		gap: 1vh;
-		text-decoration: none;
-		padding: 1vh 3vh;
+	nav::after{
+		content: "";
+		position: absolute;
+		left: -.5%;
+		top: -.5rem;
+		background-color: var(--color-bg-2);
+		width: 101%;
+		height: 100%;
+		padding: 1rem;
+		transform: rotate(-.25deg);
+		z-index: -1;
+	}
 
-		font-weight: 600;
-		font-size: 2.5vh;
+	nav::before{
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0rem;
+		background-color: crimson;
+		width: 100%;
+		padding: 1rem;
+		transform: rotate(.25deg);
+		z-index: -1;
+	}
+	
+
+	nav .principal .nav_title .__name{
+		font-size: 2.5em;
+	}
+
+	nav .principal .nav_title .__name a{
+		display: flex;
+		align-items: baseline;
+		gap: .1rem;
 		color: inherit;
-		border: .5vh solid #222;
-		background-color: #111111;
-		border-radius: .5vh;
-		transition: background .1s;
+		text-decoration: none;
 	}
 
-	header .corner a:hover{
-		/* transform: scale(1.1); */
-		background: #222;
+	nav .principal .nav_title .__name a .colorize{
+		font-size: .9em;
+		font-weight: 900;
+		font-style: italic;
+		/* color: transparent; */
+		/* -webkit-text-stroke: .1rem crimson; */
+		color: crimson;
+		
 	}
 
-	header .corner a img{
-		width: 4vh;
-		height: 4vh;
-		color: white;
+	nav .principal, nav .principal .menu ul, nav .sites{
+		display: flex;
+		align-items: center;
+		gap: 1rem;
 	}
 
-	header .corner a.codepen img{
-		width: auto;
-		height: 1.5em;
-		color: white;
+	nav .principal{
+		align-items: baseline;
+		gap: 1.5rem;
 	}
 
-	@keyframes keyDown{
-		from{
-			bottom: 1rem;
+	nav .principal .menu ul li{
+		list-style: none;
+		display: none;
+	}
+
+	nav .principal .menu ul li a{
+		color: inherit;
+		text-decoration: none;
+		font-size: 1.1em;
+	}
+
+	nav .sites a.site_link img{
+		width: 2rem;
+		height: 2rem;
+		color: transparent;
+	}
+
+	nav .sites a.site_link.threads img{
+		width: 1.6rem;
+		height: 1.6rem;
+	}
+
+	@media (max-width: 460px) {
+		nav{
+			display: flex;
+			align-items: center !important;
+			justify-content: center !important;
 		}
-		to{
-			bottom: 0;
+
+		nav .sites{
+			display: none;
 		}
 	}
 </style>

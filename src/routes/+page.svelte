@@ -1,7 +1,6 @@
 <script>
 	import { page } from '$app/stores';
 	import About from './About/About.svelte';
-	import Header from './Header/Header.svelte';
 	import Proyects from './Proyects/Proyects.svelte';
 	import Skill from './Skill/Skill.svelte';
 </script>
@@ -11,17 +10,8 @@
 	<meta name="description" content="Portafolio" />
 </svelte:head>
 
-<section>
-	<Header />
+<div>
+	<About />
 	<Proyects />
 	<Skill />
-	<About />
-</section>
-
-<style>
-	section{
-		overflow-y: scroll;
-		scroll-snap-type: y mandatory;
-		scroll-behavior: smooth;
-	}
-</style>
+</div>

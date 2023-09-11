@@ -4,7 +4,9 @@
 
 <section>
     <div class="title">
-        Habilidades
+        <span class="text">
+            Habilidades
+        </span>
     </div>
     <div class="list_skills">
         {#each json as x}
@@ -14,33 +16,30 @@
 </section>
 
 <style>
-    section{
-        height: 100vh;
-        padding: 5vh 10vh;
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
-    }
-
-    section .title{
-		font-family: var(--font-alternative);
-		font-size: 8vh;
-		margin-bottom: 5vh;
-	}
-
     section .list_skills{
 		display: flex;
 		align-items: center;
 		justify-content: center;
         flex-wrap: wrap;
-        margin-top: 10vh;
         gap: 1rem;
 	}
     
     section .list_skills .skill{
-        padding: 1vh 3vh;
-        border-radius: .5vh;
-        border: .5vh solid #222;
-        font-size: 3vh;
-        border-radius: .2vh;
+        padding: .5rem 1.5rem;
+        border: .2rem solid #222222f0;
+        color: #222222f0;
+        font-size: 1.1em;
+        font-weight: 600;
+        border-radius: .1rem;
     }
+
+    @media (max-width: 680px) {
+		section{
+			padding: 2.5rem 1.5rem;
+		}
+
+        section .list_skills .skill{
+            font-size: 1em;
+        }
+	}
 </style>

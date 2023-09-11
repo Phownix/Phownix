@@ -1,14 +1,16 @@
 <script>
+	import Header from './Header/Header.svelte';
 	import './styles.css';
 </script>
 
 <div class="app">
+	<Header />
 	<main>
 		<slot />
 	</main>
 
 	<footer>
-		<p>Development by <a href="https://phownix.vercel.app/">Phownix</a> - 2023</p>
+		<p>Development by <a href="https://phownix.vercel.app/">Phownix</a> 2023</p>
 	</footer>
 </div>
 
@@ -17,14 +19,13 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		width: 100vw;
-		height: 100vh;
-		overflow: hidden;
+		max-width: 1300px;
+		margin: auto;
 		box-sizing: border-box;
 	}
 
 	footer {
-		display: hidden;
+		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
@@ -33,6 +34,8 @@
 
 	footer a {
 		font-weight: bold;
+		color: crimson;
+		text-decoration: none;
 	}
 
 	@media (min-width: 480px) {
