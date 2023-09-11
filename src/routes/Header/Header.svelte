@@ -11,7 +11,7 @@
 			<h1 class="__name">
 				<a href="/">
 					<span class="colorize">w</span>
-					<span class="text">Phoenix</span>
+					<span class="text">Phownix</span>
 				</a>
 			</h1>
 		</div>
