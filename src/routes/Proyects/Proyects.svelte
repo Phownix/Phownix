@@ -13,7 +13,7 @@
             <article class="card">
                 <div class="thumbnail">
                     <img src="{x.thumbnail}" alt="{x.name}">
-                    <a href="/#{x.name}">Ver Mas</a>
+                    <a href="javascript:void(0)">Ver Mas</a>
                 </div>
                 <div class="body">
                     <h3>{x.name}</h3>
