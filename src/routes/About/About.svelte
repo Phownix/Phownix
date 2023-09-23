@@ -14,6 +14,9 @@
 </section>
 
 <style>	
+	section{
+		margin-top: 3.5rem;
+	}
 	section .body{
 		letter-spacing: .5px;
 		word-spacing: 2px;

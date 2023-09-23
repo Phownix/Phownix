@@ -34,7 +34,7 @@
     section .content{
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		grid-gap: 0 1.5rem;
+		grid-gap: 1rem 1.5rem;
 	}
 
 	section .view_more_btn{

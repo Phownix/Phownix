@@ -10,10 +10,8 @@
 		<div class="nav_title">
 			<h1 class="__name">
 				<a href="/">
-					<span class="text">
-						Phownix
-					</span>
-					<span class="dev">Dev</span>
+					<span class="colorize">w</span>
+					<span class="text">Phownix</span>
 				</a>
 			</h1>
 		</div>
@@ -32,18 +30,59 @@
 	</div>
 </nav>
 
+<div class="subnav">
+	<span>¿Quieres contactarme? Haz clic <a href="#contact">aquí</a>.</span>
+
+	<a href="mailto:paulogutierrez@outlock.es">paulogutierrez@outlock.es</a>
+</div>
+
 <style>
+	.subnav{
+		position: sticky;
+		display: flex;
+		top: 0;
+		align-items: center;
+		justify-content: space-between;
+		padding: .25rem 1rem;
+		font-size: .9em;
+		background-color: darkolivegreen;
+		color: white;
+		z-index: 1;
+		max-width: 1400px;
+		margin: auto;
+		margin-top: -5rem;
+		border-radius: 0 0 .25rem .25rem;
+	}
+
+	.subnav a{
+		color: inherit;
+	}
+
 	nav{
+		position: sticky;
+		/* position: relative; */
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		padding: 1rem 2rem;
 		background-color: var(--color-bg-2);
 		color: var(--dark-text);
-		border-radius: 0 0 .5rem .5rem;
 		max-width: 1400px;
 		margin: auto;
-	}	
+		z-index: 2;
+	}
+
+	nav::after{
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		padding: .125rem;
+		bottom: -.25rem;
+		border-radius: 0 0 .25rem .25rem;
+		max-width: 1400px;
+		background-color: darkolivegreen;
+	}
 
 	nav .principal .nav_title .__name{
 		font-size: 2em;
@@ -52,13 +91,14 @@
 	nav .principal .nav_title .__name a{
 		display: flex;
 		align-items: baseline;
-		gap: .5rem;
+		gap: .1rem;
 		color: inherit;
 		text-decoration: none;
 	}
 
-	nav .principal .nav_title .__name a .dev{
+	nav .principal .nav_title .__name a .colorize{
 		color: darkolivegreen;
+		font-size: .8em;
 	}
 
 	nav .principal, nav .principal .menu ul, nav .sites{
@@ -102,6 +142,15 @@
 		}
 
 		nav .sites{
+			display: none;
+		}
+	}
+
+	@media (max-width: 530px) {
+		.subnav{
+			flex-direction: column;
+		}
+		.subnav a:nth-child(2){
 			display: none;
 		}
 	}

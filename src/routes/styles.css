@@ -18,6 +18,10 @@
 	--dark-text: #ffffff;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 body {
 	min-height: 100vh;
 	margin: 0;
@@ -34,6 +38,7 @@ section{
 
 section .title{
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
@@ -46,8 +51,14 @@ section .title .text{
 }
 
 section .title .text{
-	position: relative;
 	padding: .5rem 1rem;
+}
+
+section .title .sub{
+	font-size: 1.1em;
+	margin-top: -2rem;
+	margin-bottom: 2rem;
+	text-align: center;
 }
 
 @media (min-width: 720px) {
