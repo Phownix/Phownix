@@ -1,6 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import About from './About/About.svelte';
+	import Contact from './Contact/Contact.svelte';
 	import Proyects from './Proyects/Proyects.svelte';
 	import Skill from './Skill/Skill.svelte';
 </script>
@@ -14,4 +15,5 @@
 	<About />
 	<Proyects />
 	<Skill />
+	<Contact />
 </div>

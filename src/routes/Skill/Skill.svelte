@@ -5,7 +5,7 @@
 <section>
     <div class="title">
         <span class="text">
-            Habilidades
+            Mis Habilidades
         </span>
     </div>
     <div class="list_skills">
@@ -25,12 +25,14 @@
 	}
     
     section .list_skills .skill{
-        padding: .5rem 1.5rem;
-        border: .2rem solid #222222f0;
-        color: #222222f0;
-        font-size: 1.1em;
+        padding: .6rem 1.5rem;        
+        color: #1c1c1c;
+        font-size: 1em;
         font-weight: 600;
-        border-radius: .1rem;
+        
+        background-color: #fff;
+        border-radius: .5rem;
+        border: 1px solid #1c1c1c;
     }
 
     @media (max-width: 680px) {

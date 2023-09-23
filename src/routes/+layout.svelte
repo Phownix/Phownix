@@ -34,7 +34,7 @@
 
 	footer a {
 		font-weight: bold;
-		color: crimson;
+		color: darkolivegreen;
 		text-decoration: none;
 	}
 

@@ -3,6 +3,8 @@
 	import instagram from '$lib/images/instagram.svg';
 	import linkedin from '$lib/images/linkedin.svg';
 	import threads from '$lib/images/threads.svg';
+
+	import background from '$lib/images/background.png';
 </script>
 
 <nav>
@@ -10,8 +12,10 @@
 		<div class="nav_title">
 			<h1 class="__name">
 				<a href="/">
-					<span class="colorize">w</span>
-					<span class="text">Phownix</span>
+					<span class="text">
+						Phownix
+					</span>
+					<span class="dev">Dev</span>
 				</a>
 			</h1>
 		</div>
@@ -32,63 +36,31 @@
 
 <style>
 	nav{
-		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		padding: 1rem 2rem;
-		/* background-color: var(--color-bg-2); */
+		background-color: var(--color-bg-2);
 		color: var(--dark-text);
+		border-radius: 0 0 .5rem .5rem;
 		max-width: 1400px;
 		margin: auto;
-	}
-
-	nav::after{
-		content: "";
-		position: absolute;
-		left: -.5%;
-		top: -.5rem;
-		background-color: var(--color-bg-2);
-		width: 101%;
-		height: 100%;
-		padding: 1rem;
-		transform: rotate(-.25deg);
-		z-index: -1;
-	}
-
-	nav::before{
-		content: "";
-		position: absolute;
-		left: 0;
-		bottom: 0rem;
-		background-color: crimson;
-		width: 100%;
-		padding: 1rem;
-		transform: rotate(.25deg);
-		z-index: -1;
-	}
-	
+	}	
 
 	nav .principal .nav_title .__name{
-		font-size: 2.5em;
+		font-size: 2em;
 	}
 
 	nav .principal .nav_title .__name a{
 		display: flex;
 		align-items: baseline;
-		gap: .1rem;
+		gap: .5rem;
 		color: inherit;
 		text-decoration: none;
 	}
 
-	nav .principal .nav_title .__name a .colorize{
-		font-size: .9em;
-		font-weight: 900;
-		font-style: italic;
-		/* color: transparent; */
-		/* -webkit-text-stroke: .1rem crimson; */
-		color: crimson;
-		
+	nav .principal .nav_title .__name a .dev{
+		color: darkolivegreen;
 	}
 
 	nav .principal, nav .principal .menu ul, nav .sites{
