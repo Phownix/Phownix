@@ -1,7 +1,3 @@
-<script>
-    import json from '$lib/json/work.json';
-</script>
-
 <section>
     <div class="title">
         <span class="text">

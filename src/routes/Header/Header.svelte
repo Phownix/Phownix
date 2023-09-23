@@ -3,8 +3,6 @@
 	import instagram from '$lib/images/instagram.svg';
 	import linkedin from '$lib/images/linkedin.svg';
 	import threads from '$lib/images/threads.svg';
-
-	import background from '$lib/images/background.png';
 </script>
 
 <nav>
