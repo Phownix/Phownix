@@ -33,7 +33,7 @@
 <div class="subnav">
 	<span>¿Quieres contactarme? Haz clic <a href="#contact">aquí</a>.</span>
 
-	<a href="mailto:paulogutierrez@outlock.es">paulogutierrez@outlock.es</a>
+	<a href="mailto:phownix@duck.com">phownix@duck.com</a>
 </div>
 
 <style>

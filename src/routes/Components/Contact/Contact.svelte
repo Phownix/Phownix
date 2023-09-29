@@ -12,15 +12,15 @@
     </div>
     <div class="content">
         <div class="info">
-            <p>Si prefieres, también puedes escribirme directamente a mi correo electrónico: <a href="mailto:paulogutierrez@outlock.es">paulogutierrez@outlock.es</a></p>
+            <p>Si prefieres, también puedes escribirme directamente a mi correo electrónico: <a href="mailto:phownix@duck.com">phownix@duck.com</a></p>
             <br>
             <p>También puedes encontrarme en otras plataformas como:</p>
 
             <div class="list">
-                <a href="https://codepen.io/Phownix">
+                <a target="_blank" title="Codepen" href="https://codepen.io/Phownix">
                     <img src="{codepen}" alt="">
                 </a>
-                <a href="https://discord.com/w_Phoenix#8035">
+                <a target="_blank" title="Discord" href="https://discord.com/w_Phoenix#8035">
                     <img src="{discord}" alt="">
                     Discord
                 </a>

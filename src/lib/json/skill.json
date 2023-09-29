@@ -11,5 +11,6 @@
     {"name": "Django"},
     {"name": "Angular"},
     {"name": "MariaDB"},
-    {"name": "MongoDB"}
+    {"name": "MongoDB"},
+    {"name": "TypeScript"}
 ]

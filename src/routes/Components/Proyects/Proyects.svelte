@@ -10,14 +10,14 @@
     </div>
     <div class="content">
         {#each json as x}
-            <article class="card">
+            <a href="/proyect/{x.name.replaceAll(' ','_')}" class="card">
                 <div class="thumbnail">
                     <img src="{x.thumbnail}" alt="{x.name}">
                 </div>
                 <div class="body">
                     <h3>{x.name}</h3>
                 </div>
-            </article>
+            </a>
         {/each}
     </div>
 	<div class="view_more_btn">
@@ -63,11 +63,13 @@
 		width: 100%;
 		background-color: #131313;
         border: 1px solid #1c1c1c;
+		color: inherit;
+		text-decoration: none;
 		border-radius: .5rem;
 	}
 
 	section .card:hover .thumbnail img{
-		transform: scale(1.1) rotate(-1deg);
+		transform: scale(1.2) rotate(1deg);
 	}
 
 	section .card .thumbnail{
@@ -80,6 +82,7 @@
 	section .card .thumbnail img{
 		width: 100%;
 		height: 100%;
+		transform: scale(1.25);
 		transition: transform .2s;
 	}
 
