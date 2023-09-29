@@ -24,7 +24,7 @@
         <a target="_blank" href="{data.data[0].url}" class="url_proyect">{data.data[0].url}</a>
     </div>
 
-    <dialog class="dialog">
+    <dialog>
         <div class="outbox"></div>
         <div class="box">
             <img class="dialogImage" src="{data.data[0].thumbnail}" alt="{data.data[0].name}">
@@ -61,7 +61,7 @@
 </section>
 
 <style>
-    .dialog{
+    dialog{
         position: fixed;
         left: 0; right: 0;
         top: 0; bottom: 0;
@@ -70,17 +70,17 @@
         justify-self: center;
         background-color: transparent;
         border-color: transparent;
-
-        &[open]{
-            display: flex;
-        }
-
-        &::backdrop{
-            background-color: #18181880;
-        }
+    }
+    
+    dialog[open]{
+        display: flex;
     }
 
-    .dialog .outbox{
+    dialog::backdrop{
+        background-color: #18181880;
+    }
+
+    dialog .outbox{
         position: fixed;
         left: 0;
         top: 0;
@@ -89,12 +89,12 @@
         z-index: -1;
     }
 
-    .dialog .box{
+    dialog .box{
         max-width: 100%;
         width: 50rem;
     }
 
-    .dialog .box img{
+    dialog .box img{
         width: 100%;
         height: 100%;
         object-fit: contain;
