@@ -1,7 +1,5 @@
 <script>
-	import { loop_guard } from 'svelte/internal';
-
-    export let data;
+	export let data;
 </script>
 
 <svelte:head>
@@ -26,7 +24,7 @@
         <a target="_blank" href="{data.data[0].url}" class="url_proyect">{data.data[0].url}</a>
     </div>
 
-    <dialog>
+    <dialog class="dialog">
         <div class="outbox"></div>
         <div class="box">
             <img class="dialogImage" src="{data.data[0].thumbnail}" alt="{data.data[0].name}">
@@ -63,7 +61,7 @@
 </section>
 
 <style>
-    dialog{
+    .dialog{
         position: fixed;
         left: 0; right: 0;
         top: 0; bottom: 0;
@@ -82,7 +80,7 @@
         }
     }
 
-    dialog .outbox{
+    .dialog .outbox{
         position: fixed;
         left: 0;
         top: 0;
@@ -91,12 +89,12 @@
         z-index: -1;
     }
 
-    dialog .box{
+    .dialog .box{
         max-width: 100%;
         width: 50rem;
     }
 
-    dialog .box img{
+    .dialog .box img{
         width: 100%;
         height: 100%;
         object-fit: contain;
