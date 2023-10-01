@@ -21,8 +21,22 @@
         <img class="mobile" src="{data.data[0].thumbnail}" alt="{data.data[0].name}">
         <p class="body">{data.data[0].short_description}</p>
         <p class="date">{data.data[0].date}</p>
-        <a target="_blank" href="{data.data[0].url}" class="url_proyect">{data.data[0].url}</a>
+        <a target="_blank" href="{data.data[0].url[0]}" class="url_proyect">{data.data[0].url[0]}</a>
+
+        {#if data.data[0].url[1]}
+        <a target="_blank" href="{data.data[0].url[1]}" class="url_proyect">{data.data[0].url[1]}</a>
+        {/if}
     </div>
+
+    {#if data.data[0].additional}
+    <div class="additional">
+        <ul>
+            {#each data.data[0].additional as x}
+                <li>{x}</li>
+            {/each}
+        </ul>
+    </div>
+    {/if}
 
     <dialog>
         <div class="outbox"></div>
@@ -173,7 +187,7 @@
         text-decoration: underline;
     }
 
-    section .images{
+    section .images, section .additional{
         grid-column: 1/3;
     }
 

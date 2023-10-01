@@ -5,7 +5,7 @@
 <section>
     <div class="title">
         <span class="text">
-			Algunos Proyectos
+			Mis Proyectos
 		</span>
     </div>
     <div class="content">
@@ -20,40 +20,26 @@
             </a>
         {/each}
     </div>
-	<div class="view_more_btn">
-		<a href="/proyect" class="vw_more">Ver mas</a>
-	</div>
 </section>
 
 <style>
 	section{
-		background-color: var(--color-bg-2);
-		color: var(--dark-text);
-		border-radius: .5rem;
+		margin-top: 3rem;
 	}
+
+    section .title{
+        align-items: self-start !important;
+    }
+
+    section .title .text{
+        padding: 2rem 0 !important;
+        margin-bottom: 0 !important;
+    }
+
     section .content{
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-gap: 1rem 1.5rem;
-	}
-
-	section .view_more_btn{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-top: 2rem;
-		width: 100%;
-	}
-
-	section .view_more_btn .vw_more{
-		padding: .6rem 1.5rem;
-        font-size: 1em;
-		font-weight: 600;
-        border-radius: .5rem;
-        background-color: #131313;
-        border: 1px solid #1c1c1c;
-        color: white;
-        text-decoration: none;
 	}
 
 	section .card{
@@ -61,8 +47,8 @@
 		flex-direction: column;
 		gap: .5rem;
 		width: 100%;
-		background-color: #131313;
-        border: 1px solid #1c1c1c;
+		background-color: #f5f5f5;
+        border: 1px solid #e0e0e0;
 		color: inherit;
 		text-decoration: none;
 		border-radius: .5rem;

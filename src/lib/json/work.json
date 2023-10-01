@@ -1,8 +1,8 @@
 [
 	{
 		"name": "Document Share",
-		"tag": ["Website", "Express.js", "HTML5", "MariaDB", "Nunjucks", "CSS3"],
-		"url": "https://github.com/Phownix/-",
+		"tag": ["Website", "Express.js", "ES6","HTML5", "MongoDB", "Nunjucks", "CSS3"],
+		"url": ["https://github.com/Phownix/-"],
 		"date": "19 de Septiembre 2023 - Today",
 		"short_description": "\"Document Share\" is a notes application with a simple and elegant design, focused on writing documents based on markdown",
 		"thumbnail": "https://i.ibb.co/BPyN8bK/clean-browser-mockup-1.png",
@@ -13,8 +13,8 @@
 	},
 	{
 		"name": "Rinku - URL Shortcut",
-		"tag": ["Website", "Express.js", "HTML5", "MariaDB", "CSS3"],
-		"url": "https://github.com/Phownix/rinku_shorted",
+		"tag": ["Website", "Express.js", "ES6", "HTML5", "MongoDB", "Nunjucks", "CSS3"],
+		"url": ["https://github.com/Phownix/rinku_shorted", "https://rinku-shorted-pngb-dev.fl0.io/"],
 		"date": "26 Febrero 2022 - 09 de Noviembre 2022",
 		"short_description": "Rinku URL Shorted™ is a user-friendly URL shortening tool designed to make sharing links a breeze. Whether you have long, complex URLs or just want to simplify a web address, Rinku.me has you covered. Our platform offers more than just basic shortening; it provides advanced features for personalized URL management.",
 		"thumbnail": "https://i.ibb.co/Zmk73d8/clean-browser-mockup-2.png",
@@ -25,22 +25,23 @@
 	},
 	{
 		"name": "MangaYOMU",
-		"tag": ["Website", "Express.js", "HTML5", "MariaDB", "Nunjucks", "CSS3"],
-		"url": "https://manganoyomu.org",
+		"tag": ["Website", "Express.js", "HTML5", "JWT", "MongoDB", "ART Template", "CSS3"],
+		"url": ["https://manganoyomu.org"],
 		"date": "14 Mayo 2022 - 09 de Agosto 2023",
-		"short_description": "a",
+		"short_description": "\"MangaYOMU\" is an online platform designed for manga lovers looking for a unique experience. From exciting fantasy stories to heartwarming romances, \"MangaYOMU\" offers a wide range of genres to satisfy all tastes.",
 		"thumbnail": "https://i.ibb.co/Qfzyz7P/clean-browser-mockup-3.png",
 		"thumbnail_list": [
 			"https://i.ibb.co/KVPgP1Q/Screenshot-2023-09-23-at-18-29-13-Lee-Mangas-de-manera-gratuita-en-Manga-YOMU.png",
 			"https://i.ibb.co/ssqqWsG/Screenshot-2023-09-23-at-18-29-49-Leer-Tengoku-Daimakyou-Online-En-Manga-YOMU.png"
-		]
+		],
+		"additional": ["The platform focuses on responsible use of content and DMCA policies and disclaimers are provided to ensure copyright compliance."]
 	},
 	{
 		"name": "CervexaGAMES",
 		"tag": ["Website", "php", "HTML5", "CSS3"],
-		"url": "https://github.com/Cervexa/cervexa_games_page",
+		"url": ["https://github.com/Cervexa/cervexa_games_page"],
 		"date": "21 de noviembre - 26 de diciembre",
-		"short_description": "a",
+		"short_description": "This is a personal project I've been working on for a while.",
 		"thumbnail": "https://i.ibb.co/5nhP8WR/Screenshot-2021-12-26-at-21-03-22-Cervexa-GAMES.png",
 		"thumbnail_list": [
 			"https://i.ibb.co/5nhP8WR/Screenshot-2021-12-26-at-21-03-22-Cervexa-GAMES.png"
